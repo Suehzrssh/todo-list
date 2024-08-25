@@ -1,0 +1,157 @@
+
+.far {
+    pointer-events: none;
+}
+.checked-missions {
+    opacity: .5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, red, rgb(138, 12, 177), blue);
+    background-repeat: no-repeat;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: gold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 6vh;
+    font-weight: 600;
+}
+.form-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.inp-mission {
+    width: 45%;
+    height: 30px;
+    color: gold;
+    text-align: center;
+    font-size: 14pt;
+    outline: none;
+    background: transparent;
+    border: 2px solid gold;
+    padding: 5px;
+    border-radius: 5px;
+}
+input::placeholder {
+    color: gold;
+}
+.btn-add {
+    display: block;
+    height: 30px;
+    width: 50px;
+    border: 2px solid gold;
+    border-radius: 5px;
+    background: transparent;
+    color: gold;
+    font-size: larger;
+    cursor: pointer;
+    transition: .2s all;
+}
+.btn-add:hover {
+    background-color: gold;
+    color: white;
+    transform: scale(1.1);
+}
+.btn-add:active {
+    transform: scale(1);
+    color: gold;
+}
+.mission-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission-lists {
+    list-style: upper-roman;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.div-missions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 108vh;
+    height: 30px;
+    transition: .2s all;
+    margin-top: 10px;
+}
+.div-missions:hover {
+    background-image: linear-gradient(to right bottom, red, rgb(138, 12, 177), blue);
+    color: gold;
+}
+.li-item {
+    flex: 1;
+    color: gold;
+    font-size: larger;
+}
+.btns {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    color: gold;
+    font-size: larger;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s all;
+}
+.btns:hover {
+    transform: scale(1.2);
+}
+.btn-checked {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    color: gold;
+    font-size: larger;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s all;
+}
+.btn-checked:hover {
+    color: gold;
+    background-color: green;
+}
+.btn-checked:active {
+    transform: scale(1);
+    background-color: none;
+}
+.btn-deleted {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    color: gold;
+    font-size: larger;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s all;
+}
+.btn-deleted:hover {
+    color: gold;
+    background-color: red;
+   
+}
+.btn-deleted:active {
+    transform: scale(1);
+    background-color: none;
+}
+.destroyed {
+    transition: .2s ease-in-out;
+    transform: scale(0);
+}
